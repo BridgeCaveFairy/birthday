@@ -33,9 +33,9 @@ $('document').ready(function(){
        // audio.play();
 
 		 // 获取音频元素并播放音频
-		 var audio = $('#audio1')[0];
-		 audio.src = 'assets/hbd.mp3';
-		 audio.play();
+		 var audio1 = $('#audio1')[0];
+		 audio1.src = 'assets/hbd.mp3';
+		 audio1.play();
 
 		
         $('#bulb_yellow').addClass('bulb-glow-yellow-after');
@@ -178,10 +178,10 @@ $('document').ready(function(){
 		});
 
 		 // 获取音频元素并播放音频
-		 var audio = $('#audio2')[0];
-		 audio.src = 'assets/happybirthday.mp3';
-		 audio.play();
-
+		 var audio2 = $('#audio2')[0];
+		 audio2.src = 'assets/happybirthday.mp3';
+		 audio2.play();
+		 audio1.pause();
 		
 		var i;
 
