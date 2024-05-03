@@ -29,8 +29,15 @@ $('document').ready(function(){
 		});
 	});
 	$('#play').click(function(){
-		var audio = $('.song')[0];
-        audio.play();
+		//var audio = $('.song')[0];
+       // audio.play();
+
+		 // 获取音频元素并播放音频
+		 var audio = $('#audio1')[0];
+		 audio.src = 'assets/hbd.mp3';
+		 audio.play();
+
+		
         $('#bulb_yellow').addClass('bulb-glow-yellow-after');
 		$('#bulb_red').addClass('bulb-glow-red-after');
 		$('#bulb_blue').addClass('bulb-glow-blue-after');
@@ -169,6 +176,12 @@ $('document').ready(function(){
 		$('.cake').fadeOut('fast').promise().done(function(){
 			$('.message').fadeIn('slow');
 		});
+
+		 // 获取音频元素并播放音频
+		 var audio = $('#audio2')[0];
+		 audio.src = 'assets/happybirthday.mp3';
+		 audio.play();
+
 		
 		var i;
 
