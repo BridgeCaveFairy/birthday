@@ -34,7 +34,7 @@ $('document').ready(function(){
 
 		 // 获取音频元素并播放音频
 		 var audio1 = $('#audio1')[0];
-		 audio1.src = 'assets/hbd.mp3';
+		 audio1.src = 'assets/happybirthday.mp3';
 		 audio1.play();
 
 		
@@ -179,7 +179,7 @@ $('document').ready(function(){
 
 		 // 获取音频元素并播放音频
 		 var audio2 = $('#audio2')[0];
-		 audio2.src = 'assets/happybirthday.mp3';
+		 audio2.src = 'assets/hbd.mp3';
 		 audio2.play();
 		 audio1.pause();
 		
