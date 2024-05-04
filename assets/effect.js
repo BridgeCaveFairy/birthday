@@ -27,6 +27,10 @@ $('document').ready(function(){
 		$(this).fadeOut('slow').delay(5000).promise().done(function(){
 			$('#play').fadeIn('slow');
 		});
+
+		var video = document.getElementById('myVideo');
+    		video.play();
+		
 	});
 	$('#play').click(function(){
 		//var audio = $('.song')[0];
