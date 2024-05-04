@@ -16,6 +16,27 @@ $('document').ready(function(){
 			$('#b77').animate({top:240, left: vw+250},500);
 		});
 
+	// 获取视频元素
+var video = document.getElementById('myVideo');
+
+// 监听视频播放结束事件
+video.addEventListener('ended', function() {
+    // 退出全屏
+    if (document.exitFullscreen) {
+        document.exitFullscreen();
+    } else if (document.mozCancelFullScreen) { // Firefox
+        document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) { // Chrome, Safari and Opera
+        document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { // IE/Edge
+        document.msExitFullscreen();
+    }
+
+    // 隐藏视频元素
+    video.style.display = 'none';
+});
+
+	
 	$('#turn_on').click(function(){
 
 		
@@ -31,20 +52,26 @@ $('document').ready(function(){
 		});
 
 		var video = document.getElementById('myVideo');
-    		video.play();
-
-		 if (video.requestFullscreen) {
-	        video.requestFullscreen();
-		    } else if (video.mozRequestFullScreen) { // Firefox
-		        video.mozRequestFullScreen();
-    			} else if (video.webkitRequestFullscreen) { // Chrome, Safari and Opera
- 		       video.webkitRequestFullscreen();
- 			   } else if (video.msRequestFullscreen) { // IE/Edge
-   			     video.msRequestFullscreen();
- 		   }
+    		 // 显示视频元素，播放视频并请求全屏
+    video.style.display = 'block';
+    video.play();
+    if (video.requestFullscreen) {
+        video.requestFullscreen();
+    } else if (video.mozRequestFullScreen) { // Firefox
+        video.mozRequestFullScreen();
+    } else if (video.webkitRequestFullscreen) { // Chrome, Safari and Opera
+        video.webkitRequestFullscreen();
+    } else if (video.msRequestFullscreen) { // IE/Edge
+        video.msRequestFullscreen();
+    }
 		
 		
 	});
+
+	var video = document.getElementById('myVideo');
+
+
+	
 	$('#play').click(function(){
 		//var audio = $('.song')[0];
        // audio.play();
