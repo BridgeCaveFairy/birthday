@@ -78,7 +78,7 @@ video.addEventListener('ended', function() {
 
 		 // 获取音频元素并播放音频
 		 var audio1 = $('#audio1')[0];
-		 audio1.src = 'assets/happybirthday.mp3';
+		 audio1.src = 'assets/hbd.mp3';
 		 audio1.play();
 
 		
@@ -223,16 +223,16 @@ video.addEventListener('ended', function() {
 
 		 // 获取音频元素并播放音频
 		 var audio2 = $('#audio2')[0];
-		 audio2.src = 'assets/hbd.mp3';
+		 audio2.src = 'assets/chuanqi.m4a';
 		 audio2.play();
 		 audio1.pause();
 		
 		var i;
 
 		function msgLoop (i) {
-			$("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
+			$("p:nth-child("+i+")").fadeOut('slow').delay(2000).promise().done(function(){
 			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
+			$("p:nth-child("+i+")").fadeIn('slow').delay(2000);
 			if(i==50){
 				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
 					$('.cake').fadeIn('fast');
