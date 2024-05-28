@@ -38,7 +38,7 @@ var config = {
         balloons_flying: "🎈BALLON🎈",
         cake_fadein: "🎂蛋糕？🎂",
         light_candle: "🕯蜡烛？🕯",
-        wish_message: "生日快乐宝宝！",
+        wish_message: "生日快乐宝宝！！",
         story: "A MESSAGE FOR YOU",
     }
 };
