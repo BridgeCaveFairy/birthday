@@ -42,7 +42,7 @@ var config = {
     },
     // 按钮文字描述, 以下是默认的按钮文字，英文的，您可以改成你喜欢的文字
     desc: {
-        turn_on: "🎂点这里开始🎂",
+        turn_on: "🎂点这里开始哦🎂",
         play: "🎵来点音乐🎵",
         bannar_coming: "👑带上皇冠👑",
         balloons_flying: "🎈BALLON🎈",
